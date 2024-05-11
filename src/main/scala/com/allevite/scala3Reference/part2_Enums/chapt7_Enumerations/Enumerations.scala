@@ -53,6 +53,32 @@ object Enumerations:
   object Planet:
     def surfaceArea(p: Planet):Double = Math.PI * p._radius * p._radius
 
+  /**
+   * Implementation
+   * Enums are represented as sealed classes that extend the scala.reflect.Enum trait. This trait defines a single public method, ordinal:
+   *
+   * package scala.reflect
+   *
+   * /** A base trait of all Scala enum definitions */
+   * transparent trait Enum extends Any, Product, Serializable:
+   *
+   * /** A number uniquely identifying a case of an enum */
+   * def ordinal: Int
+   * Enum values with extends clauses get expanded to anonymous class instances.
+   * For instance, the Venus value above would be defined like this:
+   *
+   * val Venus: Planet = new Planet(4.869E24, 6051800.0):
+   * def ordinal: Int = 1
+   * override def productPrefix: String = "Venus"
+   * override def toString: String = "Venus"
+   *
+   * Enum values without extends clauses all share a single implementation that can be instantiated using a
+   * private method that takes a tag and a name as arguments.
+   * For instance, the first definition of value Color.Red above would expand to:
+   *
+   * val Red: Color = $new(0, "Red")
+    */
+
   @main def MAIn(): Unit =
     println(redInt) //0
     println(redColor)
