@@ -1,4 +1,4 @@
-package com.allevite.scala3Reference.chapt3_TypeLambdas
+package com.allevite.scala3Reference.part1_NewTypes.chapt3_TypeLambdas
 
 object TypeLamdas:
 /**

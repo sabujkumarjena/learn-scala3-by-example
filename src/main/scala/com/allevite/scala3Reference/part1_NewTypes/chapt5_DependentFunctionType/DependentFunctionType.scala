@@ -1,4 +1,4 @@
-package com.allevite.scala3Reference.chapt5_DependentFunctionType
+package com.allevite.scala3Reference.part1_NewTypes.chapt5_DependentFunctionType
 
 object DependentFunctionType:
   // A dependent function type is a function type whose result depends on function's parameters

@@ -1,4 +1,4 @@
-package com.allevite.scala3Reference.chapt1_IntersectionTypes
+package com.allevite.scala3Reference.part1_NewTypes.chapt1_IntersectionTypes
 
 object IntersectionTypes:
   trait Horse:

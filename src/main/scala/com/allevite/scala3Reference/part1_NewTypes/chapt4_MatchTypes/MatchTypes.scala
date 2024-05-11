@@ -1,4 +1,4 @@
-package com.allevite.scala3Reference.chapt4_MatchTypes
+package com.allevite.scala3Reference.part1_NewTypes.chapt4_MatchTypes
 
 object MatchTypes:
   type LastElem[X] = X match

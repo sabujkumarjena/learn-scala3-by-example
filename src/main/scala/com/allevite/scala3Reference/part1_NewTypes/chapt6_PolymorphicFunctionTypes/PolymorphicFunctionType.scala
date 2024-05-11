@@ -1,4 +1,4 @@
-package com.allevite.scala3Reference.chapt6_PolymorphicFunctionTypes
+package com.allevite.scala3Reference.part1_NewTypes.chapt6_PolymorphicFunctionTypes
 
 object PolymorphicFunctionType :
   //A polymorphic method

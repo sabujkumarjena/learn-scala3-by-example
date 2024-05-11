@@ -1,4 +1,4 @@
-package com.allevite.scala3Reference.chapt2_UnionTypes
+package com.allevite.scala3Reference.part1_NewTypes.chapt2_UnionTypes
 
 object UnionTypes:
 
