@@ -36,7 +36,14 @@ object GivenInstances:
       case (x :: xst, y :: yst) =>
         val result = ord.compare(x, y)
         if result != 0 then result else compare(xst, yst)
-
+  
+  given Ord[String] with
+    override def compare(x: String, y: String): Int = x.compareTo(y)
+    
+  case class Person(name: String, age: Int) 
+  
+  given (using ord: Ord[String]):Ord[Person] with
+    override def compare(x: Person, y: Person): Int = ord.compare(x.name, y.name)
   // Alias Givens
 
   given global: ExecutionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(5))
