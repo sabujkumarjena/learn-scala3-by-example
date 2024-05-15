@@ -228,7 +228,7 @@ object InlineDemo:
       case Zero => 0
       case Succ(n1) => toInt(n1) + 1
 
-  inline val natTwo = toInt(Succ(Succ(Zero)))
+  inline val natTwo: 2 = toInt(Succ(Succ(Zero)))
   val intTwo : 2 = natTwo
 
 
