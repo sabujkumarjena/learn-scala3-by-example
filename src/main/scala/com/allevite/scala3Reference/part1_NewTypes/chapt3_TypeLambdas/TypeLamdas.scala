@@ -7,6 +7,12 @@ object TypeLamdas:
     - List, Option, Future = level-1 kind (generics )
     - Monad, Functor = level-2 kind (generics of generics)
 */
+
+
+//  def id[A]: A => A = (a: A) => a
+//  def f[A,B]: A => B = ???
+//  def compose[A, B, C](f: A => B, g: B => C): A => C = f andThen g
+//
   type MyList[A] = List[A]
   type MyListV2 = [A] =>> List[A] //type lamda
   val aList: List[Int] = List(1,2,3)
